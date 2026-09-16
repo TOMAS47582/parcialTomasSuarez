@@ -3,5 +3,9 @@ const router = Router();
 
 // TODO: importar el controlador y definir GET /recaudacion.
 
-module.exports = router;
+const { recaudacionPorCancha } = require('../controllers/reportesController');
 
+
+router.get('/recaudacion', recaudacionPorCancha);
+
+module.exports = router;
